@@ -1,0 +1,171 @@
+/*Konteyner*/
+
+.ust-menu-container {
+    width: 100%;
+    z-index: 999;
+    position: relative;
+  }
+  
+  .ust-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 14px;
+    background-color: var(--tema-rengi);
+    color: white;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .ust-sol {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .ust-sag {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  /*Arama Alanı*/
+   
+  .arama-alani {
+    position: relative;
+  }
+  
+  .arama-input {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    width: 0px;
+  }
+  
+  .arama-input.acik {
+    opacity: 1;
+    pointer-events: auto;
+    width: 160px;
+  }
+
+  /*Ayarlar Dropdown ve Tema Seçim Paneli*/
+
+  .ayar-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    padding: 4px 0;
+    min-width: 120px;
+  }
+  
+  .ayar-secim {
+    padding: 6px 12px;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  /*Görünüm Paneli*/ 
+
+  .gorunum-panel {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 240px;
+    background-color: white;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 30;
+  }
+  
+  .panel-baslik {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  .tema-secimleri {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .tema-kart {
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
+    padding: 6px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: border 0.2s ease;
+  }
+  
+  .tema-kart.aktif {
+    border-color: #666;
+  }
+  
+  .tema-gorsel {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+  }
+  
+  .tema-gorsel.acik {
+    background-color: #f0f0f0;
+  }
+  
+  .tema-gorsel.koyu {
+    background-color: #1e1e1e;
+  }
+
+  /*Pastel Renk Seçimi*/ 
+
+  .pastel-renkler h4 {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  
+  .renk-secim {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .renk-kutu {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+  }
+  
+  .renk-kutu.aktif {
+    border-color: #000;
+  }
+
+  /*Çıkış*/
+
+  .btn-cikis {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  

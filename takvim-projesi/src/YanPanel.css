@@ -1,0 +1,108 @@
+/*Genel Yapı*/
+
+.sidebar {
+    width: 260px;
+    padding: 14px 10px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+
+/*Oluştur Butonu*/
+
+.olustur-btn {
+    background-color: var(--tema-rengi);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .olustur-btn:hover {
+    background-color: var(--tema-rengi-acik);
+  }
+  
+  .plus-icon {
+    font-size: 20px;
+  }
+
+  /*Takvim Kutusu/ React Calendar Özelleştirme */ 
+
+  .takvim-kutusu {
+    margin-bottom: 16px;
+  }
+  
+  .custom-calendar {
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    background: none;
+  }
+  
+  .takvimde-bugun {
+    background-color: var(--tema-rengi) !important;
+    color: white !important;
+    border-radius: 50%;
+  }
+ 
+  /*Kişi Arama Butonu */
+
+  .kisi-arama {
+    background-color: #e8f0fe;
+    color: #1967d2;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .kisi-arama .icon {
+    margin-right: 6px;
+  }
+
+  /*Takvim Listesi Başlık ve Öğeleri*/
+
+  .takvim-baslik {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ekle-icon {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .takvim-item-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 10px 0;
+  }
+  
+  .takvim-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  

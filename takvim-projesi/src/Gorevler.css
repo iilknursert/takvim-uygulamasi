@@ -1,0 +1,99 @@
+/* Görevler paneli genel container */
+.gorevler-container {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--kart-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: var(--metin-rengi);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  /* Yeni görev ekleme alanı */
+  .gorev-ekle {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .gorev-ekle input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--metin-rengi);
+  }
+  
+  .gorev-ekle button {
+    padding: 10px 16px;
+    background-color: var(--tema-rengi);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .gorev-ekle button:hover {
+    background-color: #c05bb2; /* tema rengine uygun ton */
+  }
+  
+  /* Görev kartı */
+  .gorevler-listesi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Her görev satırı */
+  .gorev-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-rengi);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Tamamlanan görev için stil */
+  .gorev-card.tamamlandi {
+    background-color: #d9f7d9;
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  /* Görev bilgisi kısmı (checkbox + metin) */
+  .gorev-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+  }
+  
+  /* Görev aksiyonları */
+  .gorev-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .gorev-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    font-size: 14px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .gorev-actions button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  

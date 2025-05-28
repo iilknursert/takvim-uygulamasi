@@ -1,0 +1,12 @@
+# Frontend
+takvim-projesi/node_modules/
+takvim-projesi/build/
+
+# Backend
+takvimbackend/target/
+
+# Ortak
+*.log
+.DS_Store
+.idea/
+*.iml

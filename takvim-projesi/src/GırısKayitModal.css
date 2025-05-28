@@ -1,0 +1,107 @@
+/* Modal arka planı */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: transparent;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Minimal modal kutusu */
+  .modal-minimal {
+    background: var(--kart-bg);
+    color: var(--metin-rengi);
+    padding: 32px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    animation: fadeIn 0.25s ease-in-out;
+  }
+  
+  /* Başlık (örnek: "Giriş Yap") */
+  .modal-title-minimal {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* "veya" çizgili alan */
+  .modal-or-minimal {
+    text-align: center;
+    font-size: 13px;
+    color: var(--metin-rengi);
+    position: relative;
+  }
+  
+  .modal-or-minimal::before,
+  .modal-or-minimal::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: var(--border-rengi);
+  }
+  
+  .modal-or-minimal::before {
+    left: 0;
+  }
+  
+  .modal-or-minimal::after {
+    right: 0;
+  }
+  
+  /* Sosyal giriş butonları alanı */
+  .social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .social-buttons button {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background: var(--buton-bg);
+    border: 1px solid var(--border-rengi);
+    border-radius: 10px;
+    color: var(--metin-rengi);
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .social-buttons button:hover {
+    background: var(--buton-hover-bg);
+  }
+  
+  /* Modal kapatma butonu */
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .modal-close:hover {
+    color: #333;
+  }
+  
