@@ -1,12 +1,16 @@
-# Frontend
-takvim-projesi/node_modules/
-takvim-projesi/build/
+# Node (frontend)
+node_modules/
+build/
+dist/
 
-# Backend
-takvimbackend/target/
+# Java (backend)
+**/target/
+**/*.class
+*.log
 
 # Ortak
-*.log
+.env
 .DS_Store
 .idea/
+.vscode/
 *.iml
